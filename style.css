@@ -23,11 +23,28 @@ body {
 
 .text-box {
   margin: 0px auto;
-  width: 40%;
+  width: 300px;
+}
+
+.table {
+  margin: 0px auto;
+  width: 600px;
+}
+
+th {
+  background: lightgray;
 }
 
 p{
   text-align: center;
   margin: 3px 0;
   font-size: 17px;
+}
+
+.dateAndTime {
+  text-align: right;
+  background: blue;
+  color: white;
+  border-radius: 50px;
+  width: 175px;
 }
