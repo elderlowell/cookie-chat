@@ -12,11 +12,13 @@
         <input class="form-control text-box" type="text" ng-model="message" placeholder="Compose Message">
       </form>
       <br>
+      <input class="form-control text-box" ng-model="textFilter" placeholder="Filter messages"/>
+      <br>
       <table class="table">
         <th colspan="2" class="default">
           Messages from DevMountaineers
         </th>
-        <tr class="" ng-repeat="message in messages">
+        <tr class="" ng-repeat="message in messages | filter:textFilter | orderBy: '-createdAt'">
           <td>{{message.message}}</td>
           <td class="dateAndTime">{{message.createdAt | date:'medium'}}</td>
         </tr>
